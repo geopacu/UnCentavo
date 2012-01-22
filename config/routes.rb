@@ -3,6 +3,6 @@ Store::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  root :to => 'products#index'
+  root :to => 'products#login'
   resources :products
 end
