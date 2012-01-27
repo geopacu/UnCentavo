@@ -25,9 +25,9 @@
             <!-- Top Navigation -->
             <div class="topnav">
             	<ul>
-                	<li><a href="account.html">My Account</a></li>
+					<li ><%= link_to "My Account", account_path %></li>
                     <li><a href="#">My Wishlist</a></li>
-                    <li><a href="cart.html" class="colr">My Cart</a></li>
+					<li class="last"><%= link_to "My Cart", cart_path, :class => "colr" %></li>
                     <li><a href="#" class="colr">Checkout</a></li>
                     <li class="last"><%= link_to "Log In!", login_path, :class => "colr" %></li>
                 </ul>
@@ -41,7 +41,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">APPEREL</a>
                         <ul>
-                            <li><a href="listing.html">Hot Sale</a></li>
+							<li ><%= link_to "Hot Sale", listing_path %></li>                          
                             <li><a href="#" class="down">New Arrivals</a>
                                 <ul>
                                     <li><a href="listing.html">Boys</a></li>
@@ -73,7 +73,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="listing.html">Listing</a></li>
-                            <li><a href="detail.html">Product Detail</a></li>
+							<li ><%= link_to "Product Detail", detail_path %></li>
                             <li><a href="cart.html">Shopping Cart</a></li>
                             <li><a href="login.html">Login</a></li>
                             <li><a href="account.html">My Account</a></li>
